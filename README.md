@@ -2,6 +2,10 @@
 
 Rest api para simular rotinas bancárias
 
+## Design
+![img.png](img.png)
+
+
 ## Diagrama de classe:
 ```mermaid
 classDiagram
@@ -40,7 +44,6 @@ classDiagram
     User --> Card
     User --> News
 ```
-
 
 ## 🛠 Tecnologias
 
