@@ -15,4 +15,6 @@ public interface IUserService {
     List<User> listAllUsers();
 
     User updateUser(Long id, User user) throws UserNotFoundException;
+
+    void deleteUserById(Long id);
 }

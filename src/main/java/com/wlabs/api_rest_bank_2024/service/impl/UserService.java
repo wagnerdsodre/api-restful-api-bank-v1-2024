@@ -51,4 +51,14 @@ public class UserService implements IUserService {
         userRepository.save(userUpdated);
         return userUpdated;
     }
+
+    @Override
+    public void deleteUserById(Long id) {
+        User userDeleted = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User with ID " + id + " not found"));
+        userRepository.delete(userDeleted);
+
+
+
+
+    }
 }

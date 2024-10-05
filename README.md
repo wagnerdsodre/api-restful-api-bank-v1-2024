@@ -54,6 +54,7 @@ classDiagram
 | GET    | /api/v1/users/{id} | Retorna um usuário pelo ID    | Não          |
 | POST   | /api/users         | Cria um novo usuário          | Não          |
 | PUT    | /api/v1/users/{id} | Retorna um usuário atualizado | Não          |
+| DELETE | /api/v1/users/{id} | Status 204 no content         | Não          |
 
 ```json
 {
