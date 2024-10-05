@@ -36,4 +36,19 @@ public class UserService implements IUserService {
     public List<User> listAllUsers() {
         return userRepository.findAll();
     }
+
+    @Override
+    public User updateUser(Long id, User user) throws UserNotFoundException {
+        var userUpdated = new User();
+        if(userRepository.findById(id).isPresent()){
+            userUpdated.setId(user.getId());
+            userUpdated.setName(user.getName());
+            userUpdated.setCard(user.getCard());
+            userUpdated.setAccount(user.getAccount());
+            userUpdated.setFeatures(user.getFeatures());
+            userUpdated.setNews(user.getNews());
+        }
+        userRepository.save(userUpdated);
+        return userUpdated;
+    }
 }

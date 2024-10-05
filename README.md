@@ -48,12 +48,12 @@ classDiagram
 ## Doc:
 - **[Swagger](http://localhost:8080/swagger-ui/index.html#/)**
 
-| Método | Endpoint           | Descrição                        | Autenticação |
-|--------|--------------------|----------------------------------|--------------|
-| GET    | /api/v1/users      | Lista todos os usuários          | Não          |
-| GET    | /api/v1/users/{id} | Retorna um usuário pelo ID       | Não          |
-| POST   | /api/users         | Cria um novo usuário             | Não          |
-
+| Método | Endpoint           | Descrição                     | Autenticação |
+|--------|--------------------|-------------------------------|--------------|
+| GET    | /api/v1/users      | Lista todos os usuários       | Não          |
+| GET    | /api/v1/users/{id} | Retorna um usuário pelo ID    | Não          |
+| POST   | /api/users         | Cria um novo usuário          | Não          |
+| PUT    | /api/v1/users/{id} | Retorna um usuário atualizado | Não          |
 
 ```json
 {
