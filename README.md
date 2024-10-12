@@ -47,6 +47,7 @@ classDiagram
 
 ## Doc:
 - **[Swagger](http://localhost:8080/swagger-ui/index.html#/)**
+- **[Clould](https://api-restful-api-bank-v1-2024-springprofileactivate.up.railway.app/swagger-ui/index.html)**
 
 | Método | Endpoint           | Descrição                     | Autenticação |
 |--------|--------------------|-------------------------------|--------------|
